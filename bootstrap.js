@@ -2885,6 +2885,7 @@ function changeUI(window) {
             }, [delta]);
         }
       }
+      /* Shortcut keys removed. I don't need them [ealimonda]
       removeKey();
       let UIEnhancerKeyset = window.document.createElementNS(XUL, "keyset");
       UIEnhancerKeyset.setAttribute("id", keysetID + "Helpers");
@@ -2925,6 +2926,7 @@ function changeUI(window) {
         $("mainKeyset").parentNode.appendChild(UIEnhancerKeyset).appendChild(previousKey);
       }
       unload(removeKey, window);
+      */
     }
 
     handleURLBarEvents();
@@ -3212,6 +3214,7 @@ function createHotKey(window) {
     keyset && keyset.parentNode.removeChild(keyset);
   }
 
+  /* Shortcut keys removed. I don't need them [ealimonda]
   removeKey();
   let UIEnhancerKeyset = window.document.createElementNS(XUL, "keyset");
   UIEnhancerKeyset.setAttribute("id", keysetID);
@@ -3229,6 +3232,7 @@ function createHotKey(window) {
       $(toolsMenuitemID).setAttribute("key", keyID);
     unload(removeKey, window);
   }
+  */
 }
 
 function disable(id) {
